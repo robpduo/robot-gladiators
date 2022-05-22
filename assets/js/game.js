@@ -62,6 +62,9 @@ var fight = function (enemyName) {
 }; // end of fight function
 
 for (var i = 0; i < enemyNames.length; i++) {
-    var enemyHealth = 50;
-    fight(enemyNames[i]);
+    if (playerHealth > 0) {
+        window.alert("Welcome to Robot Gladiators!");
+        var enemyHealth = 50;
+        fight(enemyNames[i]);
+    }
 }
